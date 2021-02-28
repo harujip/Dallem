@@ -1,0 +1,38 @@
+        
+        .top {
+            border: 1px solid black;
+            text-align: center;
+            background-color: lightgreen;
+        }
+        a:link,a:visited
+        {
+            text-decoration: none;
+            color : blue;
+        }
+        .middle a:visited,.middle a:link
+        {
+            color : black;
+        }
+        .middle a:hover
+        {
+           border: 1px solid black;
+        }
+
+
+        .middle {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        ol {
+            display: table;
+            margin-left: auto;
+            margin-right: auto;
+            text-align : left;
+        }
+
+        #create {
+            position: fixed;
+            right: 10px;
+            bottom: 0px;
+        }
