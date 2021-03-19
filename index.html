@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>뽑기</title>
+    <style>
+        #wrap {
+            width: 500px;
+            height: 100px;
+            margin: 0 auto;
+            margin-top: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        랜덤 숫자 뽑기<br>
+        <input type="number" id="number1">최소<br>
+        <input type="number" id="number2">최대<br>
+        <input type="button" value="클릭" onclick="result()">
+        <div id="randValueShow">0</div>
+        <script>
+            function result() {
+                var min = parseInt(document.getElementById("number1").value);
+                var max = parseInt(document.getElementById("number2").value);
+                var randValue = Math.floor((Math.random() * (max - min + 1)) + min);
+                if (min == max || min >= max) {
+                    alert("정확한 값을 입력해주세요");
+                } else {
+                    document.getElementById("randValueShow").innerHTML = "결과 : " + randValue;
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>
